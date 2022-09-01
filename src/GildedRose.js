@@ -1,4 +1,3 @@
-import { ITEMS, MAXQ } from './Costants';
 import { updateGiledItem } from './updateFunctions';
 
 export class Item {
