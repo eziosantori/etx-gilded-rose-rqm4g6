@@ -6,6 +6,7 @@
 
 - Some Clean
 - Splitting the update functions based on requirements
+- Implemented common rule
 
 # Original
 

@@ -1,4 +1,5 @@
-import { ITEMS, MAXQ } from './Costants';
+import { ITEMS } from '../Costants';
+import { updateCommon } from './common';
 
 export const updateGiledItem = (item) => {
   const finalItem = { ...item };
@@ -12,10 +13,6 @@ export const updateGiledItem = (item) => {
     default:
       return updateCommon(finalItem);
   }
-};
-
-const updateCommon = () => {
-  return null;
 };
 
 const updateBrie = () => {
