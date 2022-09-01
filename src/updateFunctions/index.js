@@ -2,6 +2,7 @@ import { ITEMS } from '../Costants';
 import { updateCommon } from './common';
 import { updateAgedBrie } from './agedBrie';
 import { updateBackstagePasses } from './backstagePasses';
+import { updateSulfuras } from './sulfuras';
 
 export const updateGiledItem = (item) => {
   const finalItem = { ...item };
@@ -15,8 +16,4 @@ export const updateGiledItem = (item) => {
     default:
       return updateCommon(finalItem);
   }
-};
-
-const updateSulfuras = () => {
-  return null;
 };

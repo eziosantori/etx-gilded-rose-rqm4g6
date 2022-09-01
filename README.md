@@ -9,6 +9,7 @@
 - Implemented common rule
 - Implemented agedBrie rules
 - Implemented BackstagePasses rules
+- Implemented Sulfuras rules
 
 # Original
 
