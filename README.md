@@ -10,6 +10,7 @@
 - Implemented agedBrie rules
 - Implemented BackstagePasses rules
 - Implemented Sulfuras rules
+- removed old code
 
 # Original
 
