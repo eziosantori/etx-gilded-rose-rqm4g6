@@ -1,4 +1,4 @@
-import { MAXQ } from '../Costants';
+import { ITEMS, MAXQ } from '../Costants';
 
 /**
  * - Actually increases in `quality` the older it gets
