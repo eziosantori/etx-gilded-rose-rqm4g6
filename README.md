@@ -7,6 +7,8 @@
 - Some Clean
 - Splitting the update functions based on requirements
 - Implemented common rule
+- Implemented agedBrie rules
+- Implemented BackstagePasses rules
 
 # Original
 
