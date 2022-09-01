@@ -1,4 +1,6 @@
 import { ITEMS, MAXQ } from './Costants';
+import { updateGiledItem } from './updateFunctions';
+
 export class Item {
   constructor(name, sellIn, quality) {
     this.name = name;
@@ -14,6 +16,14 @@ export class GildedRose {
 
   updateQuality() {
     for (let i = 0; i < this.items.length; i++) {
+      // In this way we can migrate one type at a time, without breaking the previous code
+      const item = this.items[i];
+      const updatedItem = updateGiledItem(item);
+      if (updatedItem != null) {
+        item.sellIn = updatedItem.sellIn;
+        item.quality = updatedItem.quality;
+      }
+
       if (
         this.items[i].name != ITEMS.AGEDBRIE &&
         this.items[i].name != ITEMS.BACKSTAGEPASSES
