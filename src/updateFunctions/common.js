@@ -3,7 +3,7 @@
  * - Once the _sell by date_ has passed, `quality` degrades twice as fast
  * @param {*} item
  */
-export const updateCommon = () => {
+export const updateCommon = (item) => {
   if (item.quality > 0) item.quality--;
 
   item.sellIn--;
