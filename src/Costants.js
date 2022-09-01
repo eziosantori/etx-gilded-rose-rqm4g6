@@ -5,6 +5,7 @@ export class ITEMS {
   static SULFURAS = 'Sulfuras, Hand of Ragnaros';
   static DEXTERITYVEST = '+5 Dexterity Vest';
   static ELIXIRMONGOSE = 'Elixir of the Mongoose';
+  static CONJUREDMANA = 'Conjured Mana Cake';
 }
 
 export const MAXQ = 50;

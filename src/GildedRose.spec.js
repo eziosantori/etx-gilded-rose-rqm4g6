@@ -10,7 +10,38 @@ function testItemHistory(expectedHistory) {
   }
   const items = gildedRose.updateQuality();
 }
-
+describe('GildedRose new Tests', function () {
+  it('Conjured Mana Cake', () => {
+    const expectedHistory = [
+      ['Conjured Mana Cake', 10, 20],
+      ['Conjured Mana Cake', 9, 18],
+      ['Conjured Mana Cake', 8, 16],
+      ['Conjured Mana Cake', 7, 14],
+      ['Conjured Mana Cake', 6, 12],
+      ['Conjured Mana Cake', 5, 10],
+      ['Conjured Mana Cake', 4, 8],
+      ['Conjured Mana Cake', 3, 6],
+      ['Conjured Mana Cake', 2, 4],
+      ['Conjured Mana Cake', 1, 2],
+    ];
+    testItemHistory(expectedHistory);
+  });
+  it('Conjured Mana Cake - twice', () => {
+    const expectedHistory = [
+      ['Conjured Mana Cake', 5, 18],
+      ['Conjured Mana Cake', 4, 16],
+      ['Conjured Mana Cake', 3, 14],
+      ['Conjured Mana Cake', 2, 12],
+      ['Conjured Mana Cake', 1, 10],
+      ['Conjured Mana Cake', 0, 8],
+      ['Conjured Mana Cake', -1, 4],
+      ['Conjured Mana Cake', -2, 0],
+      ['Conjured Mana Cake', -3, 0],
+      ['Conjured Mana Cake', -4, 0],
+    ];
+    testItemHistory(expectedHistory);
+  });
+});
 describe('GildedRose', function () {
   it('Aged Brie', () => {
     const expectedHistory = [

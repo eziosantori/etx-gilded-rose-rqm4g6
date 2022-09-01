@@ -3,6 +3,7 @@ import { updateCommon } from './common';
 import { updateAgedBrie } from './agedBrie';
 import { updateBackstagePasses } from './backstagePasses';
 import { updateSulfuras } from './sulfuras';
+import { updateConjuredMana } from './conjuredMana';
 
 export const updateGiledItem = (item) => {
   const finalItem = { ...item };
@@ -13,6 +14,8 @@ export const updateGiledItem = (item) => {
       return updateBackstagePasses(finalItem);
     case ITEMS.SULFURAS:
       return updateSulfuras(finalItem);
+    case ITEMS.CONJUREDMANA:
+      return updateConjuredMana(finalItem);
     default:
       return updateCommon(finalItem);
   }
